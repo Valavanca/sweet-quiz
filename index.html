@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Quiz</title>
 </head>
@@ -18,12 +19,27 @@
   </nav>
   <!-- end nav -->
 
-  <!-- Target -->
+                                                         <!-- Question block -->
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-      <h3 class="header center orange-text">Question #<span id="quest-number">0</span></h3>
+      <div class="row">
+        <div class="col s3 m3">
+          <div class="card-panel aswer-count">
+            <p>Correct Answer: <span id="correct-answer">0</span></p>
+          </div>
+        </div>
+        <div class="col s6 m6">
+          <h3 class="header center orange-text">Question #<span id="quest-number">0</span></h3>
+        </div>
+        <div class="col s3 m3">
+          <div class="card-panel aswer-count">
+            <p>Total Questions: <span id="total-answer">0</span></p>
+          </div>
+        </div>
+      </div>
+
       <div class="row center">
-        <h5 class="header col s12 light">Category: <span id="quest-catg">***</span></h5>
+        <h5 class="header col s12 light">Category: <span id="category">***</span></h5>
       </div>
       <div class="row">
         <p id="quest-text" class="center light">
@@ -32,6 +48,11 @@
       </div>
       <div class="row center">
         <a id="skip-button" class="btn col s12 m12 waves-effect waves-light blue">Skip</a>
+      </div>
+
+      <div class="row center">
+        <span id="success" class="waves-effect green btn hide"><i class="material-icons left">done</i>Correct</span>
+        <span id="error" class="waves-effect red btn hide"><i class="material-icons left">error</i>Incorrect</span>
       </div>
 
       <!-- answer -->
@@ -56,12 +77,13 @@
       </div>
 
       <div class="row center">
-        <a id="next-button" class="btn col s12 m12 waves-effect waves-light green ">Next question</a>
+        <a id="next-button" class="hide btn col s12 m12 waves-effect waves-light green ">Next question</a>
       </div>
 
     </div>
   </div>
+  <!-- end question -->
 
-<script type="js/index.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

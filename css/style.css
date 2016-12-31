@@ -7,3 +7,19 @@
     font-size: 1.4em;
     font-weight: bold;
 }
+#quest-text {
+  font-size: 1.4em;
+}
+.aswer-count{
+  padding: .9em;
+}
+.aswer-count p {
+  margin: 0;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: inline-block;
+}
