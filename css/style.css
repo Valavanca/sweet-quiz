@@ -1,0 +1,9 @@
+.letter-item {
+    margin: 10px;
+    width: auto;
+    height: auto;
+    padding: .7em .8em;
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+}

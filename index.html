@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Quiz</title>
+</head>
+<body>
+                                                              <!-- START nav -->
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Sweet quiz</a>
+    </div>
+  </nav>
+  <!-- end nav -->
+
+  <!-- Target -->
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <h3 class="header center orange-text">Question #<span id="quest-number">0</span></h3>
+      <div class="row center">
+        <h5 class="header col s12 light">Category: <span id="quest-catg">***</span></h5>
+      </div>
+      <div class="row">
+        <p id="quest-text" class="center light">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, placeat?
+        </p>
+      </div>
+      <div class="row center">
+        <a id="skip-button" class="btn col s12 m12 waves-effect waves-light blue">Skip</a>
+      </div>
+
+      <!-- answer -->
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="card-panel center" id="result-letters">
+              <a class="waves-effect waves-light btn orange letter-item">A</a>
+              <a class="waves-effect waves-light btn orange letter-item">B</a>
+              <!-- letter cards -->
+          </div>
+        </div>
+      </div>
+
+      <!-- letters -->
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="card-panel center" id="random-letters">
+              <!-- letter cards -->
+              <a class="waves-effect waves-light btn blue letter-item">B</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row center">
+        <a id="next-button" class="btn col s12 m12 waves-effect waves-light green ">Next question</a>
+      </div>
+
+    </div>
+  </div>
+
+<script type="js/index.js"></script>
+</body>
+</html>
