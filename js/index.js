@@ -89,12 +89,12 @@ xhr.onreadystatechange = function() {
       error.classList.add('hide');
       next.classList.add('hide');
       answerArray = [];
-      xhr.open('GET', 'https://jservice.io/api/random', true);
+      xhr.open('GET', 'http://jservice.io/api/random', true);
       xhr.send();
     }
 };
 
-xhr.open('GET', 'https://jservice.io/api/random', true);
+xhr.open('GET', 'http://jservice.io/api/random', true);
 xhr.send();
 
 
