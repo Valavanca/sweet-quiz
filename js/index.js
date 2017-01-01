@@ -87,7 +87,7 @@ xhr.onreadystatechange = function() {
       result.classList.remove("success");
       success.classList.add('hide');
       error.classList.add('hide');
-      next.classList.add('hide');
+      next.classList.add('hide'); 
       answerArray = [];
       xhr.open('GET', 'http://jservice.io/api/random', true);
       xhr.send();
