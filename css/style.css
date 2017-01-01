@@ -1,0 +1,46 @@
+
+.logo-img {
+  height: 90%;
+  vertical-align: middle;
+  margin-right: 1em;
+}
+#random-letters,
+#result-letters {
+  min-height: 8em;
+}
+.letter-item {
+    margin: 10px 5px;
+    padding: .7em .8em;
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    min-height: 3.4em;
+    min-width: 3em;
+    text-transform: none;
+}
+#quest-text {
+  font-size: 1.4em;
+}
+.aswer-count{
+  padding: .9em;
+}
+.aswer-count p {
+  margin: 0;
+}
+#success,
+#error {
+  cursor: default;
+}
+/*--------*/
+.hide {
+  display: none;
+}
+.show {
+  display: inline-block;
+}
+.success {
+  border: 3px solid #66bb6a;
+}
+.error {
+  border: 3px solid #ef5350;
+}

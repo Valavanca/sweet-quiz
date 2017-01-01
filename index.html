@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Quiz</title>
+</head>
+<body>
+                                                              <!-- START nav -->
+  <nav class="grey darken-4" role="navigation">
+    <div class="nav-wrapper container">
+      <img class="logo-img" src="sweet_logo.png" alt="">
+      <a id="logo-container" href="#" class="brand-logo">Sweet quiz</a>
+    </div>
+  </nav>
+  <!-- end nav -->
+
+                                                         <!-- Question block -->
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m3">
+          <div class="card-panel aswer-count">
+            <p>Correct Answer: <span id="success-answer">0</span></p>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <h3 class="header center pink-text text-lighten-2">Question #<span id="quest-number">0</span></h3>
+        </div>
+        <div class="col s12 m3">
+          <div class="card-panel aswer-count">
+            <p>Total Question: <span id="total-answer">0</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row center">
+        <h5 class="header col s12 light">Category: <span id="category"></span></h5>
+      </div>
+      <div class="row">
+        <p id="quest-text" class="center light">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, placeat?
+        </p>
+      </div>
+      <div class="row center">
+        <a id="skip-button" class="btn col s12 m12 waves-effect waves-light grey darken-4">Skip</a>
+      </div>
+
+      <div class="row center">
+        <span id="success" class="waves-effect green lighten-1 btn hide"><i class="material-icons left">done</i>Correct</span>
+        <span id="error" class="waves-effect red lighten-1 btn hide"><i class="material-icons left">error</i>Incorrect</span>
+      </div>
+
+      <!-- answer -->
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="card-panel center" id="result-letters">
+              <!-- <a class="waves-effect waves-light btn orange letter-item">A</a> -->
+              <!-- letter cards -->
+          </div>
+        </div>
+      </div>
+
+      <!-- init letters -->
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="card-panel center" id="random-letters">
+              <!-- letter cards -->
+              <!-- <a class="waves-effect waves-light btn blue letter-item">B</a> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="row center">
+        <a id="next-button" class="btn col s12 m12 waves-effect waves-light green lighten-1 hide">Next question</a>
+      </div>
+
+    </div>
+  </div>
+  <!-- end question -->
+
+<script src="js/index.js"></script>
+</body>
+</html>
